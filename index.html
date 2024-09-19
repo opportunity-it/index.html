@@ -236,13 +236,45 @@
     </section>
     <!-- SECTION THIRD  -->
     <section class="step-third">
-      <div class="conatiner">
-        <h2 class="title">Warning</h2>
-        <p>
+      <div class="container container-third">
+        <h2 class="title title-third">Warning</h2>
+        <button type="button" class="button-volume third">
+          <svg width="18" height="18" class="icon-volume">
+            <use href="./images/sprite.svg#volume"></use>
+          </svg>
+        </button>
+        <p class="text-third">
           You must be at least 18 years old and comfortable with mature topics
           to play the game.
         </p>
-        <a href="#">Ok, Continue</a>
+        <div class="wrapper-glasses">
+          <img
+            srcset="
+              ./images/third-mob-glasses_279.png 279w,
+              ./images/third-tab-glasses_400.png 400w,
+              ./images/third-desk-glasses_523.png 523w,
+              ./images/third-mob-glasses_558.png 558w,
+              ./images/third-tab-glasses_800.png 800w,
+              ./images/third-desk-glasses_1046.png 1046w
+
+            "
+           sizes="(min-width:1200px) 523px, (min-width:768px) 400px, (min-width:360px) 279px, 100vw"
+            src="./images/third-mob-glasses_279.png"
+            alt="woman on glasses"
+            width="279"
+            height="430"
+          />
+        </div>
+        <div class="wrapper-pajamas">
+          <img
+            class="img-pajamas"
+            src="./images/third-immoral-tab_400.png"
+            alt="woman on pajamas"
+            width="400"
+            height="573"
+          />
+        </div>
+        <a href="#" class="link-first-step link-continue third">Ok, Continue</a>
       </div>
     </section>
   </body>
