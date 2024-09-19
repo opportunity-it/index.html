@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3d game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- SECTION FIRST  -->
+    <section class="step-first">
+      <div class="container container-step-first">
+        <p class="before-title">Stop spending time on mediocre online stuff!</p>
+        <button type="button" class="button-volume">
+          <svg width="18" height="18" class="icon-volume">
+            <use href="./images/sprite.svg#volume"></use>
+          </svg>
+        </button>
+        <h2 class="title-step-first">Explore our intriguing 3D game</h2>
+        <p class="after-title">
+          instead and experience unparalleled pleasure like you've never seen
+          before.
+        </p>
+        <ul class="list list-step-first">
+          <li class="item-step-first">
+            <a href="#" class="link-first-step link-continue">Continue</a>
+          </li>
+          <li class="item-step-first">
+            <a href="#" class="link-first-step link-no-thanks">No,thanks</a>
+          </li>
+        </ul>
+
+        <div class="girl-step-first">
+          <picture>
+            <!-- desktop -->
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/first-desk-girl.webp    1x,
+                ./images/first-desk-girl@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/first-desk-girl.png    1x,
+                ./images/first-desk-girl@2x.png 2x
+              "
+              type="image/png"
+            />
+            <!-- tablet  -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/first-tab-girl.webp    1x,
+                ./images/first-tab-girl@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/first-tab-girl.png    1x,
+                ./images/first-tab-girl@2x.png 2x
+              "
+              type="image/png"
+            />
+            <!-- mobile  -->
+            <source
+              media="(min-width:360px)"
+              srcset="
+                ./images/first-mob-girl.webp    1x,
+                ./images/first-mob-girl@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width:360px)"
+              srcset="
+                ./images/first-mob-girl.png    1x,
+                ./images/first-mob-girl@2x.png 2x
+              "
+              type="iamge/png"
+            />
+            <img src="./images/first-mob-girl.png" alt="bikini-girl" />
+          </picture>
+        </div>
+        <div class="woman-step-first">
+          <picture>
+            <!-- desktop  -->
+            <source
+              media="(min-width:1200px)"
+              srcset="
+                ./images/first-desk-woman.webp    1x,
+                ./images/first-desk-woman@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width:1200px)"
+              srcset="
+                ./images/first-desk-woman.png    1x,
+                ./images/first-desk-woman@2x.png 2x
+              "
+              type="image/png"
+            />
+            <!-- tablet  -->
+            <source
+              media="(min-width:768px)"
+              srcset="
+                ./images/first-tab-woman.webp    1x,
+                ./images/first-tab-woman@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width:768px)"
+              srcset="
+                ./images/first-tab-woman.png    1x,
+                ./images/first-tab-woman@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img src="./images/first-tab-woman.png" alt="woman" />
+          </picture>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION SECOND  -->
+    <section class="step-second">
+      <div class="container">
+        <h2>
+          Who Would You Choose as Your First Partner, if you play right now?
+        </h2>
+        <a href="#">Next</a>
+      </div>
+    </section>
+    <!-- SECTION THIRD  -->
+    <section class="step-third">
+      <div class="conatiner">
+        <h2>Warning</h2>
+        <p>
+          You must be at least 18 years old and comfortable with mature topics
+          to play the game.
+        </p>
+        <a href="#">Ok, Continue</a>
+      </div>
+    </section>
+  </body>
+</html>
