@@ -147,13 +147,14 @@
         </button>
         <div class="wrapper-icons">
           <svg
-            width="51"
-            height="45"
+            class="icon-arrows"
             viewBox="0 0 51 45"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid meet"
           >
             <circle
+              id="circle-size"
               cx="22.5"
               cy="22.5"
               r="22.5"
@@ -161,6 +162,7 @@
               fill="url(#paint0_linear_5_111)"
             />
             <path
+              id="path-size"
               d="M15.9393 23.0607C15.3536 22.4749 15.3536 21.5251 15.9393 20.9393L25.4853 11.3934C26.0711 10.8076 27.0208 10.8076 27.6066 11.3934C28.1924 11.9792 28.1924 12.9289 27.6066 13.5147L19.1213 22L27.6066 30.4853C28.1924 31.0711 28.1924 32.0208 27.6066 32.6066C27.0208 33.1924 26.0711 33.1924 25.4853 32.6066L15.9393 23.0607ZM51 23.5L17 23.5L17 20.5L51 20.5L51 23.5Z"
               fill="white"
             />
@@ -219,17 +221,17 @@
                 <source
                   media="(min-width:360px)"
                   srcset="
-                    ./images/second-girl_342.webp 1x,
-                    ./images/second-girl_171.webp 2x
+                    ./images/second-girl_171.webp 1x,
+                    ./images/second-girl_342.webp 2x
                   "
                   type="image/webp"
                 />
                 <source
-                  media="(min-width:768px)"
+                  media="(min-width:360px)"
                   srcset="
-               ./images/second-girl_342.jpg    1x,
-                ./images/second-girl_171.jpg 2x
-              "
+                    ./images/second-girl_171.jpg 1x,
+                    ./images/second-girl_342.jpg 2x
+                  "
                   type="image/jpg"
                 />
                 <img src="./images/second-girl_171.jpg" alt="second-girl" />
@@ -238,8 +240,7 @@
             <h3 class="sub-title">Step-Sister</h3>
           </div>
           <svg
-            width="51"
-            height="45"
+            class="icon-arrows"
             viewBox="0 0 51 45"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -287,30 +288,105 @@
           to play the game.
         </p>
         <div class="wrapper-glasses">
-          <img
-            srcset="
-              ./images/third-mob-glasses_279.png    279w,
-              ./images/third-tab-glasses_400.png    400w,
-              ./images/third-desk-glasses_523.png   523w,
-              ./images/third-mob-glasses_558.png    558w,
-              ./images/third-tab-glasses_800.png    800w,
-              ./images/third-desk-glasses_1046.png 1046w
-            "
-            sizes="(min-width:1200px) 523px, (min-width:768px) 400px, (min-width:360px) 279px, 100vw"
-            src="./images/third-mob-glasses_279.png"
-            alt="woman on glasses"
-            width="279"
-            height="430"
-          />
+          <picture>
+            <!-- desktop  -->
+            <source
+              media="(min-width:1200px)"
+              srcset="
+                ./images/third-desk-glasses_523.webp  1x,
+                ./images/third-desk-glasses_1046.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width:1200px)"
+              srcset="
+                ./images/third-desk-glasses_523.png  1x,
+                ./images/third-desk-glasses_1046.png 2x
+              "
+              type="image/png"
+            />
+            <!-- tablet  -->
+            <source
+              media="(min-width:768px)"
+              srcset="
+                ./images/third-tab-glasses_400.webp 1x,
+                ./images/third-tab-glasses_800.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width:768px)"
+              srcset="
+                ./images/third-tab-glasses_400.png 1x,
+                ./images/third-tab-glasses_800.png 2x
+              "
+              type="image/png"
+            />
+            <!-- mobile  -->
+            <source
+              media="(min-width:360px)"
+              srcset="
+                ./images/third-mob-glasses_279.webp 1x,
+                ./images/third-mob-glasses_558.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width:360px)"
+              srcset="
+                ./images/third-mob-glasses_279.png 1x,
+                ./images/third-mob-glasses_558.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              src="./images/third-mob-glasses_279.png"
+              alt="woman on glasses"
+            />
+          </picture>
         </div>
         <div class="wrapper-pajamas">
-          <img
-            class="img-pajamas"
-            src="./images/third-immoral-tab_400.png"
-            alt="woman on pajamas"
-            width="400"
-            height="573"
-          />
+          <picture>
+            <!-- desktop  -->
+            <source
+              media="(min-width:1200px)"
+              srcset="
+                ./images/third-immoral-desk_567.webp  1x,
+                ./images/third-immoral-desk_1134.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width:1200px)"
+              srcset="
+                ./images/third-immoral-desk_567.png  1x,
+                ./images/third-immoral-desk_1134.png 2x
+              "
+              type="image/png"
+            />
+            <!-- tablet  -->
+            <source
+              media="(min-width:768px)"
+              srcset="
+                ./images/third-immoral-tab_400.webp 1x,
+                ./images/third-immoral-tab_800.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width:768px)"
+              srcset="
+                ./images/third-immoral-tab_400.png 1x,
+                ./images/third-immoral-tab_800.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              src="./images/third-immoral-tab_400.png"
+              alt="woman on pajamas"
+            />
+          </picture>
         </div>
         <a href="#" class="link-first-step link-continue third">Ok, Continue</a>
       </div>

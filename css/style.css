@@ -52,7 +52,8 @@ button {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .step-first,
-  .step-second {
+  .step-second,
+  .step-third {
     background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.5) 0%,
@@ -64,7 +65,8 @@ button {
 
 @media screen and (min-width: 361px) {
   .step-first,
-  .step-second {
+  .step-second,
+  .step-third {
     background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.5) 0%,
@@ -78,7 +80,8 @@ button {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .step-first,
-  .step-second {
+  .step-second,
+  .step-third {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -96,7 +99,8 @@ button {
 
 @media screen and (min-width: 769px) {
   .step-first,
-  .step-second {
+  .step-second,
+  .step-third {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -109,7 +113,8 @@ button {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .step-first,
-  .step-second {
+  .step-second,
+  .step-third {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -440,17 +445,9 @@ button {
   padding-top: 21px;
   padding-bottom: 32px;
   margin-bottom: 50px;
-
-  background-repeat: no-repeat;
+    background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
-   background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.5) 100%
-    ),
-    url("../images/bg-mob-first.jpg");
 }
 
 @media screen and (min-width: 768px) {
@@ -523,6 +520,10 @@ button {
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+.icon-arrows{
+  width: 51px;height: 45px;
 }
 
 .wrapper-blur {
@@ -634,8 +635,6 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  background-image: url("../images/bg-mob-first.jpg");
 }
 
 @media screen and (min-width:768px) {
