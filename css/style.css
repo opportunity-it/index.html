@@ -444,7 +444,7 @@ button {
   padding-top: 21px;
   padding-bottom: 32px;
   margin-bottom: 50px;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -521,8 +521,33 @@ button {
   gap: 5px;
 }
 
-.icon-arrows{
-  width: 51px;height: 45px;
+/* SLIDER  */
+
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+.slide {
+  display: none;
+}
+.slide.active {
+  display: block;
+}
+
+.slide {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+  display: block;
+  opacity: 1;
+}
+
+.icon-arrows {
+  width: 51px;
+  height: 45px;
 }
 
 .wrapper-blur {
@@ -542,6 +567,17 @@ button {
   backdrop-filter: blur(5px);
 }
 
+.wrapper-blur.red{
+background-color: red;
+}
+
+.wrapper-blur.yellow{
+ background-color: yellow; 
+}
+.wrapper-blur.pink{
+  background-color: pink;
+}
+
 @media screen and (min-width: 768px) {
   .wrapper-blur {
     padding-right: 54px;
@@ -554,7 +590,8 @@ button {
 
 @media screen and (min-width: 1200px) {
   .wrapper-blur {
-    padding-right: 71px;padding-left: 71px;
+    padding-right: 71px;
+    padding-left: 71px;
     margin-bottom: 57px;
 
     width: 463px;
@@ -592,6 +629,12 @@ button {
 
     will-change: transform;
   }
+}
+
+.icon-button-mob {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .step-second .link-next,
@@ -636,16 +679,16 @@ button {
   background-size: cover;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .step-third {
     padding-bottom: 100px;
     padding-top: 150px;
   }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
   .step-third {
-position: relative;
+    position: relative;
 
     padding-bottom: 258px;
     padding-top: 257px;
@@ -665,21 +708,21 @@ position: relative;
   line-height: 44px;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .title-third {
-margin-bottom: 60px;
+    margin-bottom: 60px;
 
     max-width: 585px;
-   font-size: 70px;
+    font-size: 70px;
   }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
   .title-third {
-margin-bottom: 40px;
+    margin-bottom: 40px;
 
-font-size: 120px;
-line-height: 120px;
+    font-size: 120px;
+    line-height: 120px;
   }
 }
 
@@ -688,16 +731,16 @@ line-height: 120px;
   right: 11px;
 }
 
-@media screen and (min-width:1200px) {
- .button-volume.third {
-  top: 48px;
-  right: 82px;
-}
+@media screen and (min-width: 1200px) {
+  .button-volume.third {
+    top: 48px;
+    right: 82px;
+  }
 }
 
 .text-third {
-position: relative;
-z-index: 2;
+  position: relative;
+  z-index: 2;
 
   margin-bottom: 309px;
 
@@ -711,13 +754,13 @@ z-index: 2;
   color: #ffffff;
 }
 
-@media screen and (min-width:1200px) {
-  .text-third{
-margin-bottom: 120px;
+@media screen and (min-width: 1200px) {
+  .text-third {
+    margin-bottom: 120px;
 
-max-width: 785px;
+    max-width: 785px;
     font-size: 32px;
-line-height:  44.8px;
+    line-height: 44.8px;
   }
 }
 
@@ -730,17 +773,17 @@ line-height:  44.8px;
 }
 
 @media screen and (min-width: 768px) {
- .wrapper-glasses{
-bottom: -100px;
-transform: translateX(0);
- }
+  .wrapper-glasses {
+    bottom: -100px;
+    transform: translateX(0);
+  }
 }
 
 @media screen and (min-width: 1200px) {
- .wrapper-glasses{
-bottom: 0;
-left: 48px;
- }
+  .wrapper-glasses {
+    bottom: 0;
+    left: 48px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -751,29 +794,29 @@ left: 48px;
 
 @media screen and (min-width: 768px) {
   .step-third .wrapper-pajamas {
-   position: absolute;
-   bottom: -100px;
-   right: 0;
+    position: absolute;
+    bottom: -100px;
+    right: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .step-third .wrapper-pajamas {
-   bottom: 0;
-   right: 35px;
+    bottom: 0;
+    right: 35px;
   }
 }
 
-.step-third .link-continue.third{
+.step-third .link-continue.third {
   position: relative;
   z-index: 2;
 }
 
 @media screen and (min-width: 1200px) {
-  .step-third .link-continue.third{
-padding-top: 25px;padding-bottom: 25px;
+  .step-third .link-continue.third {
+    padding-top: 25px;
+    padding-bottom: 25px;
 
-max-width: 463px;
+    max-width: 463px;
+  }
 }
-}
-

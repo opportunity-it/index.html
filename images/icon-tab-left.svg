@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="138" height="96" fill="none">
+  <g filter="url(#a)">
+    <circle cx="48" cy="44" r="44" fill="url(#b)"/>
+  </g>
+  <path fill="#fff" d="M44.94 42.94a1.5 1.5 0 0 0 0 2.12l9.545 9.547a1.5 1.5 0 1 0 2.122-2.122L48.12 44l8.486-8.485a1.5 1.5 0 1 0-2.122-2.122L44.94 42.94ZM138 42.5H46v3h92v-3Z"/>
+  <defs>
+    <linearGradient id="b" x1="-2.85" x2="159.781" y1="-118.462" y2="-79.758" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE53B"/>
+      <stop offset=".927" stop-color="#FF2525"/>
+    </linearGradient>
+    <filter id="a" width="96" height="96" x="0" y="0" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_5_65"/>
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow_5_65" result="shape"/>
+    </filter>
+  </defs>
+</svg>
