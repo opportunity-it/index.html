@@ -52,7 +52,7 @@ button {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .step-first,
-  s.tep-second {
+  .step-second {
     background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.5) 0%,
@@ -444,6 +444,13 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+   background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("../images/bg-mob-first.jpg");
 }
 
 @media screen and (min-width: 768px) {
@@ -537,8 +544,8 @@ button {
 
 @media screen and (min-width: 768px) {
   .wrapper-blur {
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 54px;
+    padding-left: 54px;
 
     width: 400px;
     height: 500px;
@@ -547,6 +554,7 @@ button {
 
 @media screen and (min-width: 1200px) {
   .wrapper-blur {
+    padding-right: 71px;padding-left: 71px;
     margin-bottom: 57px;
 
     width: 463px;
@@ -559,7 +567,6 @@ button {
 
   border-radius: 20px;
   overflow: hidden;
-  height: auto;
 }
 
 .step-second .sub-title {

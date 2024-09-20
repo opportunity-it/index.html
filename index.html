@@ -88,7 +88,7 @@
                 ./images/first-mob-girl.png    1x,
                 ./images/first-mob-girl@2x.png 2x
               "
-              type="iamge/png"
+              type="image/png"
             />
             <img src="./images/first-mob-girl.png" alt="bikini-girl" />
           </picture>
@@ -180,21 +180,60 @@
           </svg>
           <div class="wrapper-blur">
             <div class="wrapper-img-second">
-              <img
-                srcset="
-                  ./images/second-girl_171.jpg 171w,
-                  ./images/second-girl_290.jpg 290w,
-                  ./images/second-girl_321.jpg 321w,
-                  ./images/second-girl_342.jpg 342w,
-                  ./images/second-girl_580.jpg 580w,
-                  ./images/second-girl_642.jpg 642w
-                "
-                sizes="(min-width:1200px) 321px, (min-width:768px) 290px, (min-width:360px) 171px, 100vw"
-                src="./images/second-girl_171.jpg"
-                alt="girl-step-second"
-                width="171"
-                height="199"
-              />
+              <picture>
+                <!-- desktop  -->
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/second-girl_321.webp 1x,
+                    ./images/second-girl_642.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/second-girl_321.jpg 1x,
+                    ./images/second-girl_642.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- tablet  -->
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./images/second-girl_290.webp 1x,
+                    ./images/second-girl_580.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./images/second-girl_290.jpg 1x,
+                    ./images/second-girl_580.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- mobile  -->
+                <source
+                  media="(min-width:360px)"
+                  srcset="
+                    ./images/second-girl_342.webp 1x,
+                    ./images/second-girl_171.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+               ./images/second-girl_342.jpg    1x,
+                ./images/second-girl_171.jpg 2x
+              "
+                  type="image/jpg"
+                />
+                <img src="./images/second-girl_171.jpg" alt="second-girl" />
+              </picture>
             </div>
             <h3 class="sub-title">Step-Sister</h3>
           </div>
@@ -250,15 +289,14 @@
         <div class="wrapper-glasses">
           <img
             srcset="
-              ./images/third-mob-glasses_279.png 279w,
-              ./images/third-tab-glasses_400.png 400w,
-              ./images/third-desk-glasses_523.png 523w,
-              ./images/third-mob-glasses_558.png 558w,
-              ./images/third-tab-glasses_800.png 800w,
+              ./images/third-mob-glasses_279.png    279w,
+              ./images/third-tab-glasses_400.png    400w,
+              ./images/third-desk-glasses_523.png   523w,
+              ./images/third-mob-glasses_558.png    558w,
+              ./images/third-tab-glasses_800.png    800w,
               ./images/third-desk-glasses_1046.png 1046w
-
             "
-           sizes="(min-width:1200px) 523px, (min-width:768px) 400px, (min-width:360px) 279px, 100vw"
+            sizes="(min-width:1200px) 523px, (min-width:768px) 400px, (min-width:360px) 279px, 100vw"
             src="./images/third-mob-glasses_279.png"
             alt="woman on glasses"
             width="279"
