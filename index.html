@@ -30,7 +30,7 @@
         </p>
         <ul class="list list-step-first">
           <li class="item-step-first">
-            <a href="#" class="link-first-step link-continue">Continue</a>
+            <button type="button" class="link-first-step link-continue"  onclick="document.getElementById('step-second').scrollIntoView({ behavior: 'smooth' });">Continue</button>
           </li>
           <li class="item-step-first">
             <a href="#" class="link-first-step link-no-thanks">No,thanks</a>
@@ -40,6 +40,22 @@
         <div class="girl-step-first">
           <picture>
             <!-- desktop -->
+            <source
+            media="(min-width: 1500px)"
+            srcset="
+              ./images/first-desk-girl-full.webp    1x,
+              ./images/first-desk-girl-full@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1500px)"
+            srcset="
+              ./images/first-desk-girl-full.png    1x,
+              ./images/first-desk-girl-full-@2x.png 2x
+            "
+            type="image/png"
+          />
             <source
               media="(min-width: 1200px)"
               srcset="
@@ -97,6 +113,23 @@
           <picture>
             <!-- desktop  -->
             <source
+            media="(min-width:1500px)"
+            srcset="
+              ./images/first-desk-woman-full.webp    1x,
+              ./images/first-desk-woman-full@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width:1500px)"
+            srcset="
+              ./images/first-desk-woman-full.png    1x,
+              ./images/first-desk-woman-full@2x.png 2x
+            "
+            type="image/png"
+          />
+
+            <source
               media="(min-width:1200px)"
               srcset="
                 ./images/first-desk-woman.webp    1x,
@@ -135,7 +168,7 @@
       </div>
     </section>
     <!-- SECTION SECOND  -->
-    <section class="step-second">
+    <section class="step-second" id="step-second">
       <div class="container container-step-second">
         <h2 class="title second">
           Who Would You Choose as Your First Partner, if you play right now?
@@ -394,11 +427,11 @@
             </svg>
           </button>
         </div>
-        <a href="#" class="link-first-step link-next">Next</a>
+        <button type="button" class="link-first-step link-next"  onclick="document.getElementById('step-third').scrollIntoView({ behavior: 'smooth' });">Next</button>
       </div>
     </section>
     <!-- SECTION THIRD  -->
-    <section class="step-third">
+    <section class="step-third" id="step-third">
       <div class="container container-third">
         <h2 class="title title-third">Warning</h2>
         <button type="button" class="button-volume third">
