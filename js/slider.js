@@ -44,4 +44,3 @@ slider.addEventListener('touchmove', (event) => {
 
 showSlide(currentSlide);
 
-
